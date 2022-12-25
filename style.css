@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@1,300&display=swap');
+
+/* Variabes */
+/* Mixin's */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 100%;
+}
+
+:root {
+    --darkmodehoverbackgroundcolor-color: rgba(238, 238, 238, 0.5);
+    --darkmodecolor-color: rgb(65, 65, 65);
+    --primary-color: white;
+    --secondary-color: black;
+    --brand-color: #5100c8;
+  }
+  
+  .dark-theme {
+    --darkmodecolor-color: white;
+    --darkmodehoverbackgroundcolor-color: rgba(255, 255, 255, 0.123);
+    --primary-color: black;
+    --secondary-color: white;
+  }
+
+.wrapper {
+    text-align: center;
+    margin-top: 190px;
+}
+
+#Ssanf353 {
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.wrapper h1 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+#seconds, #tens {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.wrapper button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: var(--brand-color);
+    color: white;
+    border: solid 1px var(--primary-color);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 8px;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper button:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+}
+
+#timer {
+    max-width: 200px;
+    margin-left: 234px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown0 p {
+    color: rgba(173, 173, 173, 0.678);
+    font-weight: 200;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;
+}
+
+.countdown0 {
+    margin-top: 248px;
+}
+
+.countdown0 button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: var(--brand-color);
+    color: white;
+    border: solid 1px var(--primary-color);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 27px;
+    padding: 10px 8px;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.countdown0 button:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+}
+
+.countdown0 p {
+    text-align: center;
+}
+
+#darkmode {
+    border: none;
+    background: none;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 19px;
+    padding-left: 19px;
+    border-radius: 35px;
+    color: var(--secondary-color);
+    transition: 0.1s;
+  }
+  
+  #darkmode:hover {
+    background-color: var(--darkmodehoverbackgroundcolor-color);
+    cursor: pointer;
+  }
+
+  .fa-sun {
+    color: var(--secondary-color);
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Timer/Countdown</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="stopwatch.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+
+  <button id="darkmode" type="button"><i class="fa-solid fa-moon" id="moon_sun"></i></button>
+
+  <section class="timer">
+    <div class="wrapper">
+        <h1>Stopwatch</h1>
+        <p><span id="seconds">00</span><span id="Ssanf353">:</span><span id="tens">00</span></p>
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+    </div>
+
+  <div class="countdown0">
+   <p>HH:MM:SS</p>
+   <h1 id="timer" contenteditable="true" oninput="validateInput(event)" onkeydown="preventNonNumericInput(event)">00:00:00</h1>
+   <button onclick="startTimer()">Start Timer</button>
+   <button onclick="stopTimer()">Stop Timer</button>
+   <button onclick="resetTimer()">Reset Timer</button>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
